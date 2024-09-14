@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage"
+             BackgroundColor="White"
+             Title="Minh's calculator">
+
+    <VerticalStackLayout Padding="30">
+        <Entry x:Name="Display" FontSize="100" TextColor="Black" HorizontalOptions="FillAndExpand" Text="Press Any" 
+               VerticalOptions="Center" HorizontalTextAlignment="End" IsReadOnly="True"/>
+        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*" RowSpacing="10">
+            <Button Grid.Row="0" Grid.Column="0" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="7" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="0" Grid.Column="1" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="8" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="0" Grid.Column="2" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="9" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="0" Grid.Column="3" HeightRequest="80" WidthRequest="250" BackgroundColor="LightBlue" TextColor="Black" Text="AC" FontSize="40" Clicked="OnACClicked"></Button>
+            <Button Grid.Row="1" Grid.Column="0" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="4" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="1" Grid.Column="1" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="5" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="1" Grid.Column="2" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="6" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="1" Grid.Column="3" HeightRequest="80" WidthRequest="250" BackgroundColor="LightSlateGrey" TextColor="Black" Text="/" FontSize="40" Clicked="OnOperatorClicked"></Button>
+            <Button Grid.Row="2" Grid.Column="0" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="1" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="2" Grid.Column="1" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="2" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="2" Grid.Column="2" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="3" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="2" Grid.Column="3" HeightRequest="80" WidthRequest="250" BackgroundColor="LightSlateGrey" TextColor="Black" Text="*" FontSize="40" Clicked="OnOperatorClicked"></Button>
+            <Button Grid.Row="3" Grid.Column="0" HeightRequest="80" WidthRequest="250" BackgroundColor="LightGrey" TextColor="Black" Text="0" FontSize="40" Clicked="OnNumberClicked"></Button>
+            <Button Grid.Row="3" Grid.Column="1" HeightRequest="80" WidthRequest="250" BackgroundColor="LightSlateGrey" TextColor="Black" Text="=" FontSize="40" Clicked="OnEquaClicked"></Button>
+            <Button Grid.Row="3" Grid.Column="2" HeightRequest="80" WidthRequest="250" BackgroundColor="LightSlateGrey" TextColor="Black" Text="+" FontSize="40" Clicked="OnOperatorClicked"></Button>
+            <Button Grid.Row="3" Grid.Column="3" HeightRequest="80" WidthRequest="250" BackgroundColor="LightSlateGrey" TextColor="Black" Text="-" FontSize="40" Clicked="OnOperatorClicked"></Button>
+        </Grid> 
+    </VerticalStackLayout>
+
+</ContentPage>
